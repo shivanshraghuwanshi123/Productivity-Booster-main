@@ -1,0 +1,1 @@
+Productivity Booster is a web application designed to help users manage their tasks and improve productivity. The application includes features such as task management, filtering, a Pomodoro timer, and a daily planner.
