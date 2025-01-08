@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Tasks</title>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/showtasks.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Productivity Booster</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tasks.html">Add Tasks</a></li>
+                <li><a href="showtasks.html"> Show Tasks</a></li>
+                <li><a href="filters.html">Filters</a></li>
+                <li><a href="pomodoro.html">Pomodoro Timer</a></li>
+                <li><a href="dailyPlanner.html"> Daily Planner</a></li>
+
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <main>
+            <section id="taskCards">
+                <div class="task-category" id="todoTasks">
+                    <h2>To-Do</h2>
+                    <ul></ul> <!-- To store tasks under this category -->
+                </div>
+
+                <div class="task-category" id="inProgressTasks">
+                    <h2>In Progress</h2>
+                    <ul></ul> <!-- To store tasks under this category -->
+                </div>
+
+                <div class="task-category" id="completedTasks">
+                    <h2>Completed</h2>
+                    <ul></ul> <!-- To store tasks under this category -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Productivity Booster. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to your JavaScript files -->
+    <script src="js/showtasks.js"></script>
+</body>
+
+</html>

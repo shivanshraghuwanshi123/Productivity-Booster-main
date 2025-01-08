@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.main-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Task Cards Container */
+#taskCards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Task Categories */
+.task-category {
+    flex: 1;
+    margin: 0 15px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #e8e8e8;
+    min-height: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.task-category:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.task-category h2 {
+    text-align: center;
+    color: #1a73e8;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Task Cards */
+.task-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: move;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.task-card h3 {
+    margin-top: 0;
+    font-size: 1.25em;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.task-card p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.task-card .priority {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.task-card .deadline {
+    font-style: italic;
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Buttons */
+.task-card .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-card .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.task-card .edit-btn {
+    background-color: #28a745;
+}
+
+.task-card .edit-btn:hover {
+    background-color: #218838;
+}
+
+.task-card .delete-btn {
+    background-color: #dc3545;
+}
+
+.task-card .delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Dragging Styles */
+.task-card.dragging {
+    opacity: 0.5;
+}
+
+.task-category.drag-over {
+    background-color: #e0e7ff;
+    border: 2px dashed #1a73e8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #taskCards {
+        flex-direction: column;
+    }
+
+    .task-category {
+        margin: 15px 0;
+    }
+}

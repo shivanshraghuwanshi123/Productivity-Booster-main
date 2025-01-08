@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Productivity Booster</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tasks.html">Add Tasks</a></li>
+                <li><a href="showtasks.html"> Show Tasks</a></li>
+                <li><a href="filters.html">Filters</a></li>
+                <li><a href="pomodoro.html">Pomodoro Timer</a></li>
+                <li><a href="dailyPlanner.html"> Daily Planner</a></li>
+
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <main>
+            <section class="filters">
+                <h2>Filters</h2>
+                <label for="priorityFilter">Priority:</label>
+                <select id="priorityFilter">
+                    <option value="all">All</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <label for="dateFilter">Due Date:</label>
+                <input type="date" id="dateFilter">
+            </section>
+
+            <!-- Task Lists (Assuming this section exists on the Filters page) -->
+            <section id="taskList">
+                <div class="task-category" id="todo">
+                    <h3>To-Do</h3>
+                    <ul id="todoTasks"></ul>
+                </div>
+                <div class="task-category" id="inProgress">
+                    <h3>In Progress</h3>
+                    <ul id="inProgressTasks"></ul>
+                </div>
+                <div class="task-category" id="completed">
+                    <h3>Completed</h3>
+                    <ul id="completedTasks"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Productivity Booster. </p>
+    </footer>
+
+    <!-- Link to your JavaScript files -->
+    <script src="js/main.js"></script>
+    
+    <script src="js/filters.js"></script>
+</body>
+</html>

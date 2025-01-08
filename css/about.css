@@ -1,0 +1,18 @@
+
+
+/* Main Container and About Section styling */
+.main-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 80px auto 60px; /* Adding top and bottom margins to offset header and footer */
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}

@@ -1,0 +1,78 @@
+
+/* Main container styling */
+.main-container {
+    padding: 20px;
+    margin-top: 100px; /* Ensure content is not hidden behind the header */
+    text-align: center;
+}
+
+/* Filters section styling */
+.filters {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+.filters h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.filters select, .filters input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Task list section styling */
+.task-category {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.task-category h3 {
+    color: #007bff;
+}
+
+.task-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-category li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-category li button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.task-category li button:hover {
+    background-color: #0056b3;
+}
+
+.task-category li.completed {
+    text-decoration: line-through;
+    color: #999;
+}

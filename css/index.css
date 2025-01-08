@@ -1,0 +1,44 @@
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.main-container {
+    padding: 20px;
+    text-align: center;
+    flex: 1; 
+}
+
+main h2 {
+    font-size: 2em;
+    color: #007bff;
+    padding-top: 35px;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.motivational-quote {
+    font-style: italic;
+    font-size: 1.4em;
+    color: #666;
+    margin-top: 70px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    background-color: #e9f4ff;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    background-color: #fff; 
+    color: #333;
+    padding: 10px 0;
+    position: relative; 
+    border-top: 1px solid #ccc;
+}

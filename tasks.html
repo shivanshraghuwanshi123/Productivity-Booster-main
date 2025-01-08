@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/tasks.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Productivity Booster</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tasks.html">Add Tasks</a></li>
+                <li><a href="showtasks.html"> Show Tasks</a></li>
+                <li><a href="filters.html">Filters</a></li>
+                <li><a href="pomodoro.html">Pomodoro Timer</a></li>
+                <li><a href="dailyPlanner.html"> Daily Planner</a></li>
+
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <main>
+            <!-- Task Management Section -->
+            <section id="taskInput">
+                <h2>Add New Task</h2>
+                <form id="taskForm">
+                    <label for="taskTitle">Title:</label>
+                    <input type="text" id="taskTitle" required>
+                    <label for="taskDescription">Description:</label>
+                    <textarea id="taskDescription" rows="3"></textarea>
+                    <label for="taskDeadline">Deadline Date:</label>
+                    <input type="date" id="taskDeadline">
+                    <label for="taskDeadlineTime">Deadline Time:</label>
+                    <input type="time" id="taskDeadlineTime">
+                    <label for="taskPriority">Priority:</label>
+                    <select id="taskPriority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                    <button type="submit">Add Task</button>
+                </form>
+            </section>
+
+            <!-- Task List -->
+            <section id="taskList">
+                <h2>Tasks</h2>
+                <div class="task-category" id="todo">
+                    <h3>To-Do</h3>
+                    <ul id="todoTasks"></ul>
+                </div>
+                <div class="task-category" id="inProgress">
+                    <h3>In Progress</h3>
+                    <ul id="inProgressTasks"></ul>
+                </div>
+                <div class="task-category" id="completed">
+                    <h3>Completed</h3>
+                    <ul id="completedTasks"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Link to your JavaScript files -->
+    <script src="js/main.js"></script>
+    
+    <script src="js/taskManagement.js"></script>
+</body>
+</html>
